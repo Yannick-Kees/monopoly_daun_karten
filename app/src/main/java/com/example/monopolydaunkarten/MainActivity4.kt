@@ -23,12 +23,14 @@ class MainActivity4 : AppCompatActivity() {
             if(life < 0){
                 life = 0
             }
+            finish()
             mEditor.putString("tag", life.toString()).apply()
             val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
         }
 
         nee.setOnClickListener(){
+            finish()
             val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
         }
