@@ -50,6 +50,7 @@ class MainActivity2 : AppCompatActivity() {
 
         @SuppressLint("CommitPrefEdits")
         fun loose_a_life(){
+            finish()
             val intent = Intent(this, MainActivity4::class.java)
             startActivity(intent)
         }
@@ -127,6 +128,7 @@ class MainActivity2 : AppCompatActivity() {
     }
 
     fun openActivity3() {
+        finish()
         val intent = Intent(this, MainActivity3::class.java)
         startActivity(intent)
     }

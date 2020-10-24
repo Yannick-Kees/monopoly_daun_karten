@@ -31,10 +31,12 @@ class MainActivity : AppCompatActivity() {
 
 }
     fun openActivity2() {
+        finish()
         val intent = Intent(this, MainActivity2::class.java)
         startActivity(intent)
     }
     fun openActivity3() {
+        finish()
         val intent = Intent(this, MainActivity3::class.java)
         startActivity(intent)
     }
